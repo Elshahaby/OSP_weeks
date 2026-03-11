@@ -15,7 +15,7 @@ datasource db {
 }
 
 model Book {
-  id          String   @id @default(uuid())
+  id          String   @id @default(uuid())  // Universally Unique Identifier a 128-bit value (string) that is unique across different databases and systems(Globally unique). PostgreSQL has a native uuid data type and can generate UUIDs using functions like gen_random_uuid() and it is the best choose for the distrubuted systems
   title       String
   auther      String
   publishedAt DateTime
